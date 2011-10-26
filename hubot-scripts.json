@@ -4,6 +4,5 @@
   "rubygems.coffee",
   "shipit.coffee",
   "stocks.coffee",
-  "tweet.coffee",
-  "vanity.coffee"
+  "tweet.coffee"
 ]
