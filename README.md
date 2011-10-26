@@ -3,16 +3,18 @@ Whistler
 
 ![Whistler avatar](https://asset0.37img.com/global/421a8dc1eae19380f685d34ab4904ba84baede1c/avatar.png)
 
-This is a version of GitHub's Campfire bot, hubot.  He's pretty cool.
+[Whistler](http://starwars.wikia.com/wiki/Whistler), also called Xeno, was the astromech droid of Corran Horn.
+It was the same R-series model as the legendary R2-D2.
 
-This version is designed to be deployed on heroku.
+_This is a version of GitHub's Campfire bot, hubot. He's pretty cool._
 
-Playing with Hubot
-==================
+Playing with Whistler
+=====================
 
 You'll need to install the necessary dependencies for hubot. Almost all of
-those dependencies are provided by [npm](http://npmjs.org) (You need to
-install redis on your own, or just do a quick `brew install redis`).
+those dependencies are provided by [npm](http://npmjs.org)
+
+(You need to install redis on your own, or `brew install redis`).
 
     % bin/hubot
 
