@@ -6,7 +6,7 @@ Whistler
 [Whistler](http://starwars.wikia.com/wiki/Whistler), also called Xeno, was the astromech droid of Corran Horn.
 It was the same R-series model as the legendary R2-D2.
 
-_This is a version of GitHub's Campfire bot, hubot. He's pretty cool._
+_Whistler is based on GitHub's Campfire bot, [hubot](http://hubot.github.com/). He's pretty cool._
 
 Playing with Whistler
 =====================
