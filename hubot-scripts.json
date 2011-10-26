@@ -1,1 +1,9 @@
-["tweet.coffee", "shipit.coffee"]
+[
+  "haters.coffee",
+  "keep-alive.coffee",
+  "rubygems.coffee",
+  "shipit.coffee",
+  "stocks.coffee",
+  "tweet.coffee",
+  "vanity.coffee"
+]
