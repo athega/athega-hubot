@@ -10,8 +10,9 @@ This version is designed to be deployed on heroku.
 Playing with Hubot
 ==================
 
-You'll need to install the necessary dependencies for hubot.  All of
-those dependencies are provided by [npm](http://npmjs.org).
+You'll need to install the necessary dependencies for hubot. Almost all of
+those dependencies are provided by [npm](http://npmjs.org) (You need to
+install redis on your own, or just do a quick `brew install redis`).
 
     % bin/hubot
 
@@ -26,7 +27,7 @@ You'll see some startup output about where your scripts come from.
 
 Then you can interact with Hubot by typing `hubot help`.
 
-    hubot help
+    Whistler help
 
     animate me <query>  - The same thing as `image me`, except adds a few
     convert me <expression> to <units> - Convert expression to given units.
@@ -35,7 +36,7 @@ Then you can interact with Hubot by typing `hubot help`.
 
 Take a look at the scripts in the `./scripts` folder for examples.
 Delete any scripts you think are silly.  Add whatever functionality you
-want hubot to have.
+want Whistler to have.
 
 Deployment
 ==========
