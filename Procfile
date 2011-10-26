@@ -1,1 +1,1 @@
-app: bin/hubot -a campfire -n Whistler
+app: bin/hubot -a campfire -n athega-hubot
