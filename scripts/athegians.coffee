@@ -5,42 +5,18 @@
 # Author:  Peter Hellberg
 #
 
-Flow = require 'gowiththeflow'
-
 module.exports = (robot) ->
   robot.respond /(show )?athegian (.*)$/i, (msg) ->
-    name = msg.match[2]
-
+    name = escape(msg.match[2])
     msg
       .http("http://athega.se/api/employees/#{name}")
       .get() (err, res, body) ->
         if res.statusCode == 200
-          employee = JSON.parse(body)
-          show_employee(employee, msg)
+          show_employee(JSON.parse(body), msg)
         else
           msg.reply "Sorry, no such employee at Athega"
 
-    show_employee = (employee, msg) ->
-      Flow()
-        # Image
-        .seq (next) ->
-          msg.send employee.medium_image_url, next()
+  show_employee = (employee, msg) ->
+    msg.send employee.medium_image_url
+    msg.send "#{employee.name}, #{employee.position}"
 
-
-        # Name and position
-        .seq (next) ->
-          msg.send "#{employee.name}, #{employee.position}", next()
-
-        # GitHub profile (if available)
-        .seq (next) ->
-          if employee.github != ''
-            msg.send "GitHub: http://github.com/#{employee.github}", next()
-          else
-            next()
-
-        # Twitter profile (if available)
-        .seq (next) ->
-          if employee.twitter != ''
-            msg.send "Twitter: http://twitter.com/#{employee.twitter}", next()
-          else
-            next()

@@ -15,7 +15,6 @@
   },
 
   "dependencies": {
-    "gowiththeflow": ">= 1.0.0",
     "sprintf": "https://github.com/maritz/node-sprintf/tarball/master",
     "hubot": "https://github.com/github/hubot/tarball/master",
     "hubot-scripts": "https://github.com/github/hubot-scripts/tarball/master"
