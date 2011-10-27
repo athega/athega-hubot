@@ -24,22 +24,23 @@ module.exports = (robot) ->
       Flow()
         # Image
         .seq (next) ->
-          msg.send employee.medium_image_url, next
+          msg.send employee.medium_image_url, next()
+
 
         # Name and position
         .seq (next) ->
-          msg.send "#{employee.name}, #{employee.position}", next
+          msg.send "#{employee.name}, #{employee.position}", next()
 
         # GitHub profile (if available)
         .seq (next) ->
           if employee.github != ''
-            msg.send "GitHub: http://github.com/#{employee.github}", next
+            msg.send "GitHub: http://github.com/#{employee.github}", next()
           else
             next()
 
         # Twitter profile (if available)
         .seq (next) ->
           if employee.twitter != ''
-            msg.send "Twitter: http://twitter.com/#{employee.twitter}", next
+            msg.send "Twitter: http://twitter.com/#{employee.twitter}", next()
           else
             next()
