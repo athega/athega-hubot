@@ -32,5 +32,6 @@ imageMe = (msg, query, cb) ->
     .get() (err, res, body) ->
       images = JSON.parse(body)
       images = images.responseData.results
-      cb "#{images[0].unescapedUrl}#.png"
+      image  = msg.random images
+      cb "#{image.unescapedUrl}#.png"
 
