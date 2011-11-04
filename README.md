@@ -11,7 +11,7 @@ _Whistler is based on GitHub's Campfire bot, [hubot](http://hubot.github.com/). 
 Playing with Whistler
 =====================
 
-You'll need to install the necessary dependencies for hubot. Almost all of
+You'll need to install the necessary dependencies for Whistler. Almost all of
 those dependencies are provided by [npm](http://npmjs.org)
 
 (You need to install redis on your own, or `brew install redis`).
@@ -27,9 +27,9 @@ You'll see some startup output about where your scripts come from.
     Loading hubot-scripts from /Users/me/nubot/hubot-scripts.json
     Successfully connected to Redis
 
-Then you can interact with Hubot by typing `hubot help`.
+Then you can interact with Whistler by typing `/help`.
 
-    Whistler help
+    /help
 
     animate me <query>  - The same thing as `image me`, except adds a few
     convert me <expression> to <units> - Convert expression to given units.
@@ -50,7 +50,7 @@ Deployment
 
 You'll need to edit the `Procfile` to say what the bot's name is.
 
-Hubot also needs three environmental variables set to run and to keep him
+Whistler also needs three environmental variables set to run and to keep him
 running on heroku.
 
 Campfire Variables
