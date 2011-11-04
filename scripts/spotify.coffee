@@ -12,7 +12,7 @@ module.exports = (robot) ->
         msg.http(msg.match[0]).get() (err, res, body) ->
           if res.statusCode is 200
             cover_src = /id="cover-art" src="(.+)"/g
-            msg.send cover_src.exec(body)[1], info
+            msg.send "#{cover_src.exec(body)[1]}#.png", info
           else
             msg.send info
 
