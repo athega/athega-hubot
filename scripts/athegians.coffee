@@ -6,6 +6,9 @@
 #
 
 module.exports = (robot) ->
+  robot.respond /foobar/, (msg) ->
+    msg.send 'foo', 'bar', 'baz'
+  
   robot.respond /(show )?athegian (.*)$/i, (msg) ->
     name = escape(msg.match[2])
     msg
@@ -17,6 +20,6 @@ module.exports = (robot) ->
           msg.reply "Sorry, no such employee at Athega"
 
   show_employee = (employee, msg) ->
-    msg.send employee.medium_image_url
-    msg.send "#{employee.name}, #{employee.position}"
+    msg.send employee.medium_image_url,
+            "#{employee.name}, #{employee.position}"
 
