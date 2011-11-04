@@ -8,7 +8,13 @@ module.exports = (robot) ->
     msg.http(spotify.uri msg.match[0]).get() (err, res, body) ->
       if res.statusCode is 200
         data = JSON.parse(body)
-        msg.send spotify[data.info.type](data)
+        info = spotify[data.info.type](data)
+        msg.http(msg.match[0]).get() (err, res, body) ->
+          if res.statusCode is 200
+            cover_src = /id="cover-art" src="(.+)"/g
+            msg.send cover_src.exec(body)[1], info
+          else
+            msg.send info
 
 spotify =
   link: /// (
