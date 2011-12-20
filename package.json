@@ -15,9 +15,8 @@
   },
 
   "dependencies": {
-    "optparse": ">= 1.0.1",
-    "sprintf": "https://github.com/maritz/node-sprintf/tarball/master",
-    "hubot": "https://github.com/github/hubot/tarball/master",
-    "hubot-scripts": "https://github.com/github/hubot-scripts/tarball/master"
+    "optparse": "1.0.3",
+    "hubot": "2.0.5",
+    "hubot-scripts": "2.0.4"
   }
 }
