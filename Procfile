@@ -1,1 +1,1 @@
-app: bin/hubot -a campfire -l -n Whistler
+app: bin/hubot -a campfire -l / -n Whistler
