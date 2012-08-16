@@ -7,9 +7,11 @@
   "gemwhois.coffee",
   "hackernews.coffee",
   "hashing.coffee",
-  "keep-alive.coffee",
   "rubygems.coffee",
   "shipit.coffee",
-  "stocks.coffee",
+  "spotify.coffee",
+  "ruby.coffee",
+  "xkcd.coffee",
+  "tweet-content.coffee",
   "tweet.coffee"
 ]
