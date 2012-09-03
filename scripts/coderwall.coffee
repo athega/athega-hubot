@@ -1,7 +1,21 @@
-# Messing around with the Coderwall API.
+# Description
+#   Messing around with the Coderwall API.
 #
-# coderwall <coderwall username> - Returns coder achievements from coderwall.com
-#                      
+# Dependencies:
+#   None
+#
+# Configuration:
+#   None
+#
+# Commands:
+#   coderwall <coderwall username> - Returns coder achievements from coderwall.com
+#
+# Notes:
+#   None
+#
+# Author:
+#   peterhellberg
+
 module.exports = (robot) ->
   robot.respond /(coderwall)( me)? (.*)/i, (msg) ->
     user = msg.match[3]
@@ -10,9 +24,9 @@ module.exports = (robot) ->
         # If not response bad username
         if res.headers['content-length'] <= 1
           letter_s = if user.substr(-1)=='s' then '' else 's'
-          msg.send "Sorry I cannot find "+user+"'"+letter_s+" coderwall" 
+          msg.send "Sorry I cannot find "+user+"'"+letter_s+" coderwall"
         # Else return the coder badges
-        else 
+        else
           profile = JSON.parse(body)
           # Give an intro to the coderwall profile
           resp_str = "";
