@@ -1,9 +1,20 @@
-# Getting info about the Athegians
+# Description
+#   Getting info about the Athegians
 #
-# /[show ]athegian <name> - Information about an employee
+# Dependencies:
+#   None
 #
-# Author:  Peter Hellberg
+# Configuration:
+#   None
 #
+# Commands:
+#   /[show ]athegian <name> - Information about an employee
+#
+# Notes:
+#   None
+#
+# Author:
+#   peterhellberg
 
 module.exports = (robot) ->
   robot.respond /(show )?athegian (.*)$/i, (msg) ->
