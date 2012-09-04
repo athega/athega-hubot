@@ -1,4 +1,5 @@
 [
+  "abstract.coffee",
   "haters.coffee",
   "9gag.coffee",
   "aww.coffee",
@@ -7,11 +8,15 @@
   "gemwhois.coffee",
   "hackernews.coffee",
   "hashing.coffee",
+  "reddit.coffee",
   "rubygems.coffee",
   "shipit.coffee",
-  "spotify.coffee",
+  "octocat.coffee",
   "ruby.coffee",
   "xkcd.coffee",
+  "yoda-quotes.coffee",
+  "yoda-pictures.coffee",
+  "wikipedia.coffee",
   "tweet-content.coffee",
   "tweet.coffee"
 ]
