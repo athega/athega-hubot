@@ -21,7 +21,7 @@ module.exports = (robot) ->
         info = spotify[data.info.type](data)
         msg.http(msg.match[0]).get() (err, res, body) ->
           if res.statusCode is 200
-            cover_src = /class="album-cover-art">[\s\S]*.+img src="(.+?)"/g
+            cover_src = /div class="album-cover-art">[\s\S].+img src="(.+?)"/g
             msg.send "#{cover_src.exec(body)[1]}#.png", info
           else
             msg.send info
