@@ -1,8 +1,10 @@
-# Generates help commands for Hubot.
+# Description:
+#   Generates help commands for Hubot.
 #
-# These commands are grabbed from comment blocks at the top of each file.
+#   These commands are grabbed from comment blocks at the top of each file.
 #
-# help - Displays all of the help commands that Hubot knows about.
+# Commands:
+#   help - Displays all of the help commands that Hubot knows about.
 
 module.exports = (robot) ->
   robot.respond /help$/i, (msg) ->
