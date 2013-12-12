@@ -1,5 +1,6 @@
 [
   "abstract.coffee",
+  "bitcoin.coffee",
   "haters.coffee",
   "9gag.coffee",
   "aww.coffee",
@@ -8,8 +9,10 @@
   "gemwhois.coffee",
   "hackernews.coffee",
   "hashing.coffee",
+  "hubotagainsthumanity.coffee",
   "reddit.coffee",
   "rubygems.coffee",
+  "ruby_rules.coffee",
   "shipit.coffee",
   "octocat.coffee",
   "ruby.coffee",
@@ -18,5 +21,9 @@
   "yoda-pictures.coffee",
   "wikipedia.coffee",
   "tweet-content.coffee",
-  "tweet.coffee"
+  "tweet.coffee",
+  "applause.coffee",
+  "ackbar.coffee",
+  "youtube-info.coffee",
+  "zombies.coffee"
 ]
