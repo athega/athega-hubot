@@ -8,13 +8,14 @@
     "type":       "MIT",
     "url":        "http://github.com/github/hubot/raw/master/LICENSE"
   }],
-  
+
   "repository" : {
     "type": "git",
     "url":  "https://github.com/athega/athega-hubot.git"
   },
 
   "dependencies": {
+    "cheerio": "0.12.4",
     "sprintf": "0.1.3",
     "nodepie": "0.6.2",
     "soupselect": "0.2.0",
